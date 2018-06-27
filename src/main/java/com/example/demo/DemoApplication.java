@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,13 +15,10 @@ import java.util.Set;
 @SpringBootApplication
 public class DemoApplication {
 
+	@Getter
+	@AllArgsConstructor
 	public static class Cat {
-
-		public String name;
-
-		public Cat(String name) {
-			this.name = name;
-		}
+		private String name;
 	}
 
 	@RestController
