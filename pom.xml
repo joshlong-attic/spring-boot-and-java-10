@@ -23,6 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>10</java.version>
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
+        <lombok.version>1.18.0</lombok.version>
     </properties>
 
     <dependencies>
@@ -56,6 +57,10 @@
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 
