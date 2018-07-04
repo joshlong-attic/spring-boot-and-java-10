@@ -66,6 +66,17 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
 
             </plugin>
+	<plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	    <dependencies>
+		<dependency>
+		    <groupId>org.ow2.asm</groupId>
+		    <artifactId>asm</artifactId>
+		    <version>6.2</version>
+		</dependency>
+	    </dependencies>
+	</plugin>
         </plugins>
     </build>
 
